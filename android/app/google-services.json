@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "501269419460",
+    "project_id": "payflow-vitor",
+    "storage_bucket": "payflow-vitor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501269419460:android:78bda86b69133f01234091",
+        "android_client_info": {
+          "package_name": "com.vitorrisso.payflow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501269419460-rrc01dnms82h4ns3koss9hfh2kv37a8q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vitorrisso.payflow",
+            "certificate_hash": "5338de28310f31d9185a1a8fde7f3543e8a11ba0"
+          }
+        },
+        {
+          "client_id": "501269419460-kjsiru0o47a98q87neo8gd3uimecsnvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_UCGlY3J8UYYARDC7LnRZTuS-H0YsPaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "501269419460-kjsiru0o47a98q87neo8gd3uimecsnvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
