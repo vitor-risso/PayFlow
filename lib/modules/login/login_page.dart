@@ -64,8 +64,7 @@ class _LoginPageState extends State<LoginPage> {
                         onTap: () async {
                           GoogleSignIn _googleSignIn = GoogleSignIn(
                             scopes: [
-                              'email',
-                              'https://www.googleapis.com/auth/contacts.readonly',
+                              'email'
                             ],
                           );
                           Future<void> _handleSignIn() async {
