@@ -12,9 +12,16 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  HomeController? controller;
+
+  @override
+  void initState() {
+    controller = HomeController();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    final controller = HomeController();
     final pages = [
       Container(
         color: Colors.red,
@@ -56,7 +63,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           )),
-      body: pages[controller.currentPage],
+      body: pages[controller!.currentPage],
       bottomNavigationBar: Container(
         height: 90,
         child: Row(
@@ -64,8 +71,9 @@ class _HomePageState extends State<HomePage> {
           children: [
             IconButton(
                 onPressed: () {
-                  controller.setPage(0);
-                  setState(() {});
+                  setState(() {
+                    controller?.setPage(0);
+                  });
                 },
                 icon: Icon(
                   Icons.home,
@@ -89,8 +97,9 @@ class _HomePageState extends State<HomePage> {
             ),
             IconButton(
                 onPressed: () {
-                  controller.setPage(1);
-                  setState(() {});
+                  setState(() {
+                    controller?.setPage(1);
+                  });
                 },
                 icon: Icon(
                   Icons.description_outlined,
